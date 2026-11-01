@@ -23,7 +23,7 @@
         </div>
       </a>
 
-      <nav aria-label="Primary Navigation">
+      <nav id="site-nav" class="nav-menu" aria-label="Primary Navigation">
         <ul class="nav-links">
           <li><a href="#arsenal">Capabilities</a></li>
           <li><a href="#dockyard-projects">Dockyard Works</a></li>
@@ -32,12 +32,22 @@
           <li><a href="#transcripts">Academics</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="mobile-nav-actions">
+          <a href="https://www.linkedin.com/in/adisorn-jiamdee-25ab54370/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn Profile ↗</a>
+          <a href="mailto:adisornjiamdeeth@gmail.com" class="btn btn-gold">Inquire via Email ✉</a>
+        </div>
       </nav>
 
-      <div class="nav-actions">
+      <div class="nav-actions desktop-only">
         <a href="https://www.linkedin.com/in/adisorn-jiamdee-25ab54370/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
         <a href="mailto:adisornjiamdeeth@gmail.com" class="btn btn-gold">Inquire</a>
       </div>
+
+      <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
     </div>
   </header>
 

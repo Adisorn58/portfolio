@@ -27,7 +27,7 @@ const PROJECTS_DATA = {
 
   w2: {
     category: 'Royal Thai Naval Dockyard • Structural FEA',
-    badge: 'Dockyard FEA Report',
+    badge: 'Dockyard FEA Assessment',
     isNavy: true,
     title: 'Submarine Docking Block Global, Local & Hyperelastic FEA',
     period: 'July 2026 | Ship Design Department, RTN Dockyard',
@@ -78,7 +78,7 @@ const PROJECTS_DATA = {
     problem:
       'Legacy naval dockyard vibration guidelines (2022 edition) required modernization to align with contemporary Finite Element modal/harmonic prediction workflows, ISO shipboard vibration standards, and modern naval propulsion/machinery acceptance testing.',
     methodology:
-      'Drafted the comprehensive 58-page official Royal Thai Naval Dockyard Engineering Standard มอร. 200-0003-0869 (Ship Vibration Analysis), superseding standard มอร. 200-0002-0365.',
+      'Drafted the comprehensive official Royal Thai Naval Dockyard Engineering Standard มอร. 200-0003-0869 (Ship Vibration Analysis), superseding standard มอร. 200-0002-0365.',
     outcomes: [
       'Established standardized procedures for global hull girder vibration, local deck/superstructure resonance, and propulsion shafting vibration analysis.',
       'Defined clear frequency-domain acceptance thresholds for crew habitability, structural fatigue, and sensitive combat/sensor equipment.',
@@ -120,11 +120,11 @@ const PROJECTS_DATA = {
     problem:
       'Small displacement wooden ferries require tailored propeller geometry (diameter, pitch-to-diameter ratio, expanded area ratio, and blade count) to achieve optimal open-water propulsive efficiency while eliminating cavitation risks under shallow-water resistance profiles.',
     methodology:
-      'Conducted a systematic 38-page preliminary propeller design evaluation and multi-variable hydrodynamic optimisation matching vessel resistance, wake fraction, and thrust deduction against engine torque-RPM operating envelopes under Burrill cavitation criteria.',
+      'Conducted a systematic preliminary propeller design evaluation and multi-variable hydrodynamic optimisation matching vessel resistance, wake fraction, and thrust deduction against engine torque-RPM operating envelopes under Burrill cavitation criteria.',
     outcomes: [
       'Sized optimal 3-blade propeller diameter and pitch satisfying vessel thrust requirements and cavitation inception boundaries.',
       'Evaluated open-water propulsive efficiency (η₀) curves and delivered complete shafting/propeller manufacturing recommendations.',
-      'Note: Internal RTN Dockyard engineering report protected under OPSEC guidelines.'
+      'Note: Internal RTN Dockyard engineering technical data protected under OPSEC guidelines.'
     ],
     tools: ['Propeller Hydrodynamics', 'Cavitation Analysis', 'Resistance & Propulsion', 'Open-Water Sizing'],
     reportUrl: null
@@ -163,7 +163,7 @@ const PROJECTS_DATA = {
     problem:
       'Develop a complete, requirements-driven conventional/AIP submarine concept design ("HTMS Hanuman Class") tailored to Thailand’s strategic maritime theater (Gulf of Thailand and Andaman Sea) and benchmarked against 6 regional navies.',
     methodology:
-      'Executed a 2-semester systems engineering and naval architecture design sequence: (1) Authored a 46-page Concept of Operations (CONOPS) defining Anti-Submarine Warfare (ASW), Anti-Surface Warfare (ASuW), Mine Laying, ISR, and Special Operations lock-out requirements; (2) Executed full parametric submarine sizing using the Submarine Concept Toolkit (V6.2).',
+      'Executed a 2-semester systems engineering and naval architecture design sequence: (1) Formulated the Concept of Operations (CONOPS) defining Anti-Submarine Warfare (ASW), Anti-Surface Warfare (ASuW), Mine Laying, ISR, and Special Operations lock-out requirements; (2) Executed full parametric submarine sizing using the Submarine Concept Toolkit (V6.2).',
     outcomes: [
       'Integrated multi-mission combat payloads (torpedoes, tube-launched ASuW missiles, mines, and diver lock-out chamber).',
       'Sized the hybrid Diesel-Generator, Main Storage Battery, Main Propulsion Motor, and Air-Independent Propulsion (AIP) plant.',
@@ -174,7 +174,7 @@ const PROJECTS_DATA = {
   },
 
   a2: {
-    category: 'The University of Adelaide • Master’s Capstone Thesis',
+    category: 'The University of Adelaide • Postgraduate Research Capstone',
     badge: 'Mark: 85 (High Distinction)',
     isNavy: false,
     title: 'Techno-Economic Modelling of Nuclear-Renewable Hybrid Systems for Industrial Hydrogen',
@@ -184,7 +184,7 @@ const PROJECTS_DATA = {
     problem:
       'Heavy industry decarbonisation requires continuous 24/7 hydrogen supply. Relying solely on variable solar and wind generation necessitates massive, cost-prohibitive hydrogen and battery storage buffers.',
     methodology:
-      'Developed a comprehensive 101-page techno-economic analysis (TEA) and an hour-by-hour MATLAB simulation & optimisation framework comparing stand-alone nuclear plants (PWR and HTGR) against hybrid Nuclear-Renewable energy systems for industrial-scale hydrogen electrolysis.',
+      'Developed a comprehensive techno-economic analysis (TEA) and an hour-by-hour MATLAB simulation & multi-variable optimisation framework comparing stand-alone nuclear plants (PWR and HTGR) against hybrid Nuclear-Renewable energy systems for industrial-scale hydrogen electrolysis.',
     outcomes: [
       'Quantified Levelised Cost of Hydrogen (LCOH), capacity factors, and storage curtailment across standalone and hybrid configurations.',
       'Demonstrated how baseload nuclear heat and power paired with renewable generation minimizes hydrogen storage volume and stabilizes 24/7 industrial supply.',

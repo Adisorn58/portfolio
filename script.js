@@ -423,6 +423,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'FN:Lt. Adisorn Jiamdee, RTN',
       'TITLE:Ship Construction Planning Engineer & Naval Architect',
       'ORG:Royal Thai Naval Dockyard;Naval Engineering Command',
+      'TEL;TYPE=CELL,VOICE;VALUE=uri:tel:+66-86-414-2794',
       'EMAIL;TYPE=INTERNET,PREF:adisornjiamdeeth@gmail.com',
       'URL:https://adisorn58.github.io/portfolio/',
       'URL;TYPE=LinkedIn:https://www.linkedin.com/in/adisorn-jiamdee-25ab54370/',

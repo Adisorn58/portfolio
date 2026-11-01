@@ -1118,6 +1118,169 @@ dialog::backdrop {
 }
 
 /* ==========================================================================
+   CADET ATHLETICS & RUGBY SHOWCASE
+   ========================================================================== */
+.rugby-showcase-box {
+  margin-top: 3.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-luxury);
+  position: relative;
+  overflow: hidden;
+}
+
+.rugby-showcase-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold-primary), var(--cyan-telemetry), transparent);
+}
+
+.rugby-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.rugby-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.rugby-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  max-width: 65ch;
+  margin-top: 0.45rem;
+  line-height: 1.6;
+}
+
+.rugby-trophy-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.4rem;
+  border-radius: var(--radius-md);
+  background: var(--gold-subtle);
+  border: 1.5px solid var(--gold-primary);
+  box-shadow: 0 0 20px rgba(201, 164, 92, 0.2);
+  flex-shrink: 0;
+}
+
+.trophy-count {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  line-height: 1;
+}
+
+.trophy-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold-primary);
+  margin-top: 0.2rem;
+  white-space: nowrap;
+}
+
+.trophies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.trophy-card {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 1.2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.trophy-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-gold);
+}
+
+.trophy-icon {
+  font-size: 1.6rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.trophy-year {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--gold-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.trophy-name {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 0.15rem;
+  line-height: 1.35;
+}
+
+.trophy-sub {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+  line-height: 1.4;
+}
+
+.rugby-gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.85rem;
+}
+
+.rugby-photo-card {
+  position: relative;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  aspect-ratio: 4 / 3;
+  background: #08111e;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.rugby-photo-card:hover {
+  transform: scale(1.04);
+  border-color: var(--gold-primary);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.rugby-photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
    CONTACT FOOTER
    ========================================================================== */
 .footer-cta {
@@ -1388,6 +1551,12 @@ dialog::backdrop {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .trophies-grid {
+    grid-template-columns: 1fr;
+  }
+  .rugby-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Tablet & Mobile Navigation Menu Drawer */
@@ -1630,6 +1799,42 @@ dialog::backdrop {
 
   .contact-card {
     padding: 1.75rem 1.25rem;
+  }
+
+  .rugby-showcase-box {
+    padding: 1.5rem 1.15rem;
+    margin-top: 2.25rem;
+  }
+
+  .rugby-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .rugby-trophy-badge {
+    flex-direction: row;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .trophy-count {
+    font-size: 1.5rem;
+  }
+
+  .rugby-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+  }
+
+  .executive-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .card-specs div {
+    font-size: 0.74rem;
   }
 
   dialog#case-study-dialog {

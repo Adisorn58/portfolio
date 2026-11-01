@@ -410,4 +410,77 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  /* 7. Executive vCard (.vcf) Generator & Downloader */
+  const downloadVcfBtn = document.getElementById('btn-download-vcf');
+  const saveVcardBtn = document.getElementById('btn-save-vcard');
+
+  function triggerVcfDownload() {
+    const vcard = [
+      'BEGIN:VCARD',
+      'VERSION:3.0',
+      'N:Jiamdee;Adisorn;;Lt.;',
+      'FN:Lt. Adisorn Jiamdee, RTN',
+      'TITLE:Ship Construction Planning Engineer & Naval Architect',
+      'ORG:Royal Thai Naval Dockyard;Naval Engineering Command',
+      'EMAIL;TYPE=INTERNET,PREF:adisornjiamdeeth@gmail.com',
+      'URL:https://adisorn58.github.io/portfolio/',
+      'URL;TYPE=LinkedIn:https://www.linkedin.com/in/adisorn-jiamdee-25ab54370/',
+      'NOTE:Master of Maritime Engineering (The University of Adelaide, 7.0/7.0 GPA, 100% High Distinction) | Bachelor of Engineering (Marine Engineering, RTNA, First-Class Honours) | Specialized in Structural FEA, Underwater Shock & Vibration Dynamics, and Submarine Infrastructure.',
+      'END:VCARD'
+    ].join('\r\n');
+
+    const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'Lt_Adisorn_Jiamdee_RTN.vcf';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
+  if (downloadVcfBtn) {
+    downloadVcfBtn.addEventListener('click', triggerVcfDownload);
+  }
+  if (saveVcardBtn) {
+    saveVcardBtn.addEventListener('click', triggerVcfDownload);
+  }
+
+  /* 8. Floating Back to Top Button */
+  const backToTop = document.getElementById('back-to-top');
+  if (backToTop) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+  }
+
+  /* 9. Header Navigation ScrollSpy */
+  const sections = document.querySelectorAll('main > section, footer#contact');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  if (sections.length > 0 && navLinks.length > 0) {
+    window.addEventListener('scroll', () => {
+      let currentSection = '';
+      sections.forEach((sec) => {
+        const top = sec.offsetTop - 120;
+        const height = sec.offsetHeight;
+        if (window.scrollY >= top && window.scrollY < top + height) {
+          currentSection = sec.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.remove('active');
+        if (currentSection && link.getAttribute('href') === `#${currentSection}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  }
 });
